@@ -176,20 +176,14 @@ public class MainActivity extends AppCompatActivity {
             for(int i=0,flag=0;i<ansStr.length() ;i++){
 
                 String ch=Character.toString(ansStr.charAt(i));
-
+                if(i+1==ansStr.length()-1 && ch.equals(".") && ansStr.charAt(i+1)=='0')break;
                 if(ansStr.charAt(i)=='E') {
-                    flag = 2;
                     tempAns+=" x10^";
                     continue;
+                }else {
+                    tempAns+=ch;
                 }
-                if(ansStr.charAt(i)=='.') {
-                    flag = 1;
-                    if(i+1 ==ansStr.length()-1){
-                        if(ansStr.charAt(i+1)=='0')break;
-                    }
-                }
-                if(i>=7 && flag==1)continue;
-                else tempAns+=ch;
+
             }
 
 

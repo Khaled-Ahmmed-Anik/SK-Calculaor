@@ -27,6 +27,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMaxTextSize="40sp"
                 android:textColor="@color/black"
                 android:textSize="30sp" />
 
@@ -37,6 +39,8 @@
                 android:layout_weight="1"
                 android:gravity="bottom|right"
                 android:text="@string/_0_0"
+                android:autoSizeTextType="uniform"
+                app:autoSizeMaxTextSize="60sp"
                 android:textAppearance="@style/TextAppearance.AppCompat.Display2"
                 android:textColor="@color/black" />
         </LinearLayout>
